@@ -13,6 +13,9 @@
 		766913F42072F817002C6F8E /* TaskApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 766913F22072F817002C6F8E /* TaskApp.xcdatamodeld */; };
 		766913F62072F817002C6F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766913F52072F817002C6F8E /* Assets.xcassets */; };
 		766913F92072F817002C6F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766913F72072F817002C6F8E /* LaunchScreen.storyboard */; };
+		76691401207305FD002C6F8E /* TasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76691400207305FD002C6F8E /* TasksVC.swift */; };
+		7669140320737901002C6F8E /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669140220737901002C6F8E /* CoreDataHandler.swift */; };
+		76F6294F2074434C00BD413C /* RecieveDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F6294E2074434C00BD413C /* RecieveDataVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		766913F52072F817002C6F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766913F82072F817002C6F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		766913FA2072F817002C6F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76691400207305FD002C6F8E /* TasksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksVC.swift; sourceTree = "<group>"; };
+		7669140220737901002C6F8E /* CoreDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		76F6294E2074434C00BD413C /* RecieveDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieveDataVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				766913EB2072F817002C6F8E /* AppDelegate.swift */,
-				766913ED2072F817002C6F8E /* ViewController.swift */,
+				7669140520737924002C6F8E /* Controller */,
 				766913EF2072F817002C6F8E /* Main.storyboard */,
+				7669140420737911002C6F8E /* Model */,
+				766914062073793E002C6F8E /* sunporting files */,
+			);
+			path = TaskApp;
+			sourceTree = "<group>";
+		};
+		7669140420737911002C6F8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7669140220737901002C6F8E /* CoreDataHandler.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7669140520737924002C6F8E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				766913ED2072F817002C6F8E /* ViewController.swift */,
+				76F6294E2074434C00BD413C /* RecieveDataVC.swift */,
+				76691400207305FD002C6F8E /* TasksVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		766914062073793E002C6F8E /* sunporting files */ = {
+			isa = PBXGroup;
+			children = (
 				766913F52072F817002C6F8E /* Assets.xcassets */,
 				766913F72072F817002C6F8E /* LaunchScreen.storyboard */,
 				766913FA2072F817002C6F8E /* Info.plist */,
 				766913F22072F817002C6F8E /* TaskApp.xcdatamodeld */,
 			);
-			path = TaskApp;
+			name = "sunporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				766913EE2072F817002C6F8E /* ViewController.swift in Sources */,
+				7669140320737901002C6F8E /* CoreDataHandler.swift in Sources */,
 				766913EC2072F817002C6F8E /* AppDelegate.swift in Sources */,
 				766913F42072F817002C6F8E /* TaskApp.xcdatamodeld in Sources */,
+				76F6294F2074434C00BD413C /* RecieveDataVC.swift in Sources */,
+				76691401207305FD002C6F8E /* TasksVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +341,7 @@
 				766913FF2072F817002C6F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

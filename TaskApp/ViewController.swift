@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var txtFirst: UITextField!
+    @IBOutlet weak var txtLast: UITextField!
+    @IBOutlet weak var txtAge: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func BtnDone (_ sender : Any)
+    {
+        let paremters = [
+        "firstName":txtFirst.text ?? "" ,
+        "lastName":txtLast.text ?? "" ,
+        "Age":txtAge.text ?? "" ,
+        "Email":txtEmail.text ?? ""
+        ]
+       print( CoreDataHandler.saveData(paremeters: paremters,entityName: "User"))
+        // to goto the second vc
+    let secondVC = storyboard?.instantiateViewController(withIdentifier: "TasksVC") as! TasksVC
+        navigationController?.pushViewController(secondVC, animated: true)
+    }
 
-
+    
 }
 
